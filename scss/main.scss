@@ -1,5 +1,47 @@
 $primary-color: #444;
+$secondary-color: #eece1a;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 body {
   background: $primary-color;
+  color: #fff;
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+}
+
+h1, h2, h3 {
+  font-weight: 400;
+
+  &.lg-heading {
+    font-size: 6rem;
+  }
+
+  &.sm-heading {
+    margin-bottom: 2rem;
+    padding: 0.2rem 1rem;
+    background: rgba(lighten($color: $primary-color, $amount: 2), 0.5);
+    /*rgba daje nam opacity -> 0.5 (półprzezroczystość dla obrazu), lighten -> funkcja sass rozjaśnia dany kolor*/
+  }
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/*header ma zawsze znajdować się w prawym górnym narożniku -> stąd position fixed*/
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+}
+
+.text-secondary {
+  color: $secondary-color;
 }

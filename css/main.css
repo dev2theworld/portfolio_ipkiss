@@ -1,4 +1,47 @@
+@charset "UTF-8";
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background: #444;
+  color: #fff;
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+}
+
+h1, h2, h3 {
+  font-weight: 400;
+}
+
+h1.lg-heading, h2.lg-heading, h3.lg-heading {
+  font-size: 6rem;
+}
+
+h1.sm-heading, h2.sm-heading, h3.sm-heading {
+  margin-bottom: 2rem;
+  padding: 0.2rem 1rem;
+  background: rgba(73, 73, 73, 0.5);
+  /*rgba daje nam opacity -> 0.5 (półprzezroczystość dla obrazu), lighten -> funkcja sass rozjaśnia dany kolor*/
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/*header ma zawsze znajdować się w prawym górnym narożniku -> stąd position fixed*/
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+}
+
+.text-secondary {
+  color: #eece1a;
 }
 /*# sourceMappingURL=main.css.map */
