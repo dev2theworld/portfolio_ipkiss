@@ -1,0 +1,57 @@
+.about-info {
+  display: grid;
+  gap: 30px;
+  grid-template-areas: 
+  'bioimage bio bio'
+  'job1 job2 job3';
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.bio-img {
+  grid-area: bioimage;
+  width: 250px;
+  height: 250px;
+  background: url('../img/mask_1.jpg') center no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  border: solid 5px $secondary-color;
+}
+
+.bio {
+  grid-area: bio;
+  font-size: 2rem;
+}
+
+.job {
+  background: darken($color: $primary-color, $amount: 2);
+  padding: 0.5rem;
+  font-size: 1.1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-bottom: $secondary-color 5px solid;
+  border-right: $secondary-color 2px solid;
+}
+
+.job-1 {
+  grid-area: job1;
+}
+
+.job-2 {
+  grid-area: job2;
+}
+.job-3 {
+  grid-area: job3;
+}
+
+#about {
+  padding: 1rem 4rem;
+}
+
+#main-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 0.5rem;
+  background: darken($color: $primary-color, $amount: 5);
+}
