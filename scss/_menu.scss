@@ -10,7 +10,7 @@
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: #fff;
+    background: set-text-color($primary-color);
     @include easeOut;
   }
 
@@ -71,7 +71,7 @@
   }
 
   &-branding {
-    background: $primary-color;
+    background: darken($color: $primary-color, $amount: 24);
     /*takes nav off the screen -> positive goes down*/
     transform: translate3d(0, 100%, 0);
     @include easeOut;
@@ -83,7 +83,7 @@
     .portrait {
       width: 250px;
       height: 250px;
-      background: url('../img/mister_x.jpg') center no-repeat;
+      background: url('../img/mask_1.jpg') center no-repeat;
       background-size: cover;
       border-radius: 50%;
       border: solid 5px $secondary-color;
@@ -109,8 +109,9 @@
     font-size: 30px;
     text-transform: uppercase;
     padding: 1rem 0;
-    font-weight: 300;
-    color: #fff;
+    font-weight: 600;
+    font-size: 4rem;
+    color: set-text-color($primary-color);
     text-decoration: none;
     @include easeOut;
 
