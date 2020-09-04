@@ -4,7 +4,7 @@
   grid-template-areas: 
   'bioimage bio bio'
   'job1 job2 job3';
-  grid-template-columns: repeat(3, 1fr);
+  
 }
 
 .bio-img {
@@ -47,11 +47,10 @@
 }
 
 #main-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
   font-size: 1.5rem;
   text-align: center;
-  padding: 0.5rem;
+  vertical-align: middle;
+  padding: 0 0.5rem;
   background: darken($color: $primary-color, $amount: 5);
+  height: 40px;
 }
