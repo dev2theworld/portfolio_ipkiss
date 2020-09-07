@@ -1,0 +1,21 @@
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  img {
+    width: 50%;
+    border: 1.5px $secondary-color dotted;
+    margin-bottom: 30px;
+
+    &:hover {
+      opacity: 0.5;
+      border-color: $primary-color;
+      transform: scale(1.2);
+      @include easeOut;
+    }
+  }
+
+  a {
+    color: #000;
+  }
+}

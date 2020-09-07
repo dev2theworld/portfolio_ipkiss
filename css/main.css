@@ -392,6 +392,32 @@ main#home h2 {
   padding: 1rem 4rem;
 }
 
+.projects {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+.projects img {
+  width: 50%;
+  border: 1.5px #eece1a dotted;
+  margin-bottom: 30px;
+}
+
+.projects img:hover {
+  opacity: 0.5;
+  border-color: #fff;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.projects a {
+  color: #000;
+}
+
 #main-footer {
   font-size: 1.5rem;
   text-align: center;
