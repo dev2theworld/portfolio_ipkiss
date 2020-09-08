@@ -55,8 +55,34 @@
     grid-template-columns: 1fr;
   }
 
+  #work .projects {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+
+    .item {
+      width: 100%;
+      margin-bottom: 5px;
+
+      a {
+        font-size: 1.2rem;
+      }
+
+      &-buttons {
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 30px;
+      }
+    }
+  }
+
   #main-footer {
-    margin-top: 920px;
+    margin-top: 1080px;
+  }
+
+  #main-footer-work {
+    margin-top: 820px;
   }
 }
 
