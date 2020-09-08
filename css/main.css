@@ -392,20 +392,25 @@ main#home h2 {
   padding: 1rem 4rem;
 }
 
+#work {
+  padding: 1rem 4rem;
+}
+
 .projects {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
+  margin-left: 180px;
 }
 
-.projects img {
-  width: 50%;
-  border: 1.5px #eece1a dotted;
+.projects .item img {
+  width: 60%;
+  /*border: 1.5px $secondary-color dotted;*/
   margin-bottom: 30px;
 }
 
-.projects img:hover {
+.projects .item img:hover {
   opacity: 0.5;
   border-color: #fff;
   -webkit-transform: scale(1.2);
@@ -414,8 +419,24 @@ main#home h2 {
   transition: all 0.5s ease-out;
 }
 
-.projects a {
+.projects .item a {
   color: #000;
+  font-size: 1.2rem;
+}
+
+.projects .item-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 60%;
+}
+
+.projects .item-buttons .btn:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 #main-footer {
