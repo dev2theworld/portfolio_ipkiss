@@ -4,6 +4,14 @@
 
 @include mediaLarge {
 
+  #about .about-info {
+    margin-bottom: 35px;
+  }
+
+  #footer-about {
+    position: initial !important;
+  }
+
 }
 
 @include mediaMedium {
@@ -53,6 +61,7 @@
     'job2'
     'job3';
     grid-template-columns: 1fr;
+    margin-bottom: 35px;
   }
 
   #work .projects {
@@ -77,17 +86,53 @@
     }
   }
 
-  #main-footer {
-    margin-top: 1080px;
+  #contact {
+
+    .boxes {
+      margin-top: 2rem;
+    }
   }
 
-  #main-footer-work {
-    margin-top: 820px;
+  #footer-about,
+  #footer-work {
+    position: initial !important;
   }
 }
 
 @include mediaSmall {
-  main#home h1 {
-    margin-top: 10vh;
+  main#home {
+    
+    h1 {
+      margin-top: 1vh;
+    }
+
+    .icons a {
+      font-size: 0.8rem;
+    }
+  }
+
+  #body-about {
+
+    .menu-btn {
+      position: absolute;
+      z-index: 3;
+      right: 15px;
+      top: 15px;
+    }
+  }
+
+  #contact {
+
+    .boxes {
+      margin-bottom: 15px;
+    }
+  
+    div:hover {
+      padding: 0.5rem 1rem;
+    }
+  }
+
+  #footer-contact {
+    position: initial !important;
   }
 }
